@@ -4230,6 +4230,16 @@ components:
           type: string
           format: url
           example: "https://api.congress.gov/v3/treaty/112/8?format=json"
+    associatedHearingTranscript:
+      type: object
+      properties:
+        jacketNumber:
+          type: integer
+          example: 52640
+        url:
+          type: string
+          format: url
+          example: "https://api.congress.gov/v3/hearing/118/house/52640?format=json"
     CommitteeReportsNumber:
       type: array
       items:
@@ -4591,6 +4601,8 @@ components:
           example: "115538"
         hearingTranscript:
           type: array
+          items:
+            $ref: '#/components/schemas/associatedHearingTranscript'
         location:
           type: object
           properties:
@@ -5858,6 +5870,8 @@ components:
           example: "Foreign Relations Committee"
         subcommittees:
           type: array
+          items:
+            $ref: '#/components/schemas/treatySubcommittee'
         systemCode:
           type: string
           example: "ssfr00"
@@ -5874,7 +5888,31 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/treatyCommittee'
-
+    treatySubcommittee:
+      type: object
+      properties:
+        activities:
+          type: array
+          items:
+            type: object
+            properties:
+              date:
+                type: string
+                format: date-time
+                example: "1965-10-19T04:00:00Z"
+              name:
+                type: string
+                example: "Reported By"
+        name:
+          type: string
+          example: "Foreign Relations Committee"
+        systemCode:
+          type: string
+          example: "ssfr01"
+        url:
+          type: string
+          format: url
+          example: "https://api.congress.gov/v3/committee/senate/ssfr01?format=json"
 
   parameters:
     format:
