@@ -5247,10 +5247,12 @@ components:
           items:
             allOf:
               - $ref: '#/components/schemas/subcommittees'
-              - referralDate:
-                  type: string
-                  format: date
-                  example: "2024-03-07"
+              - type: object
+                properties:
+                  referralDate:
+                    type: string
+                    format: date
+                    example: "2024-03-07"
         congress:
           type: integer
           example: 118
@@ -5810,7 +5812,7 @@ components:
             properties:
               date:
                 type: string
-                format: date
+                format: date-time
                 example: "1965-10-19T04:00:00Z"
               name:
                 type: string
