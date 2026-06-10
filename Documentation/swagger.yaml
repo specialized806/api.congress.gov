@@ -5569,10 +5569,10 @@ components:
         format:
           type: string
           example: "PDF"
-      url:
-        type: string
-        format: url
-        example: "https://www.congress.gov/crs_external_products/R/PDF/R47175/R47175.1.pdf"
+        url:
+          type: string
+          format: url
+          example: "https://www.congress.gov/crs_external_products/R/PDF/R47175/R47175.1.pdf"
     relatedMaterial:
       type: object
       properties:
