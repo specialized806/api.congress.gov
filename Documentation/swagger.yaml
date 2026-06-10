@@ -1,4 +1,3 @@
-#file: noinspection SpellCheckingInspection
 openapi: 3.0.3
 
 info:
@@ -5043,7 +5042,7 @@ components:
     HouseCommunications:
       type: object
       properties:
-        houseCoummunications:
+        houseCommunications:
           type: array
           items:
             $ref: '#/components/schemas/houseCommunication'
@@ -5230,7 +5229,7 @@ components:
     SenateCommunications:
       type: object
       properties:
-        senateCoummunications:
+        senateCommunications:
           type: array
           items:
             $ref: '#/components/schemas/senateCommunication'
@@ -5512,7 +5511,7 @@ components:
           type: string
           format: date
           example: "2024-02-28"
-        jackeNumber:
+        jacketNumber:
           type: integer
           example: 61203
         number:
@@ -5914,7 +5913,7 @@ components:
     lawType:
       name: lawType
       in: path
-      description: The law type. Values are either 'pub’ or ‘priv.’
+      description: The law type. Values are either 'pub' or ‘priv.'
       required: true
       schema:
         type: string
@@ -5935,7 +5934,7 @@ components:
     amendmentNumber:
       name: "amendmentNumber"
       in: "path"
-      description: "The amendment’s assigned number. For example, the value can be 2137."
+      description: "The amendment's assigned number. For example, the value can be 2137."
       required: true
       schema:
         type: string
@@ -6044,7 +6043,7 @@ components:
     reportNumber:
       name: "reportNumber"
       in: path
-      description: "The committee report’s assigned number. For example, the value can be 617."
+      description: "The committee report's assigned number. For example, the value can be 617."
       required: true
       schema:
         type: integer
@@ -6151,21 +6150,21 @@ components:
     communicationNumber:
       name: "communicationNumber"
       in: path
-      description: "The communication’s assigned number. For example, the value can be 3324."
+      description: "The communication's assigned number. For example, the value can be 3324."
       required: true
       schema:
         type: integer
     requirementNumber:
       name: "requirementNumber"
       in: path
-      description: "The requirement’s assigned number. For example, the value can be 8070."
+      description: "The requirement's assigned number. For example, the value can be 8070."
       required: true
       schema:
         type: integer
     nominationNumber:
       name: "nominationNumber"
       in: path
-      description: "The nomination’s assigned number. For example, the value can be 389."
+      description: "The nomination's assigned number. For example, the value can be 389."
       required: true
       schema:
         type: integer
@@ -6179,14 +6178,14 @@ components:
     treatyNumber:
       name: "treatyNumber"
       in: path
-      description: "The treaty’s assigned number. For example, the value can be 13."
+      description: "The treaty's assigned number. For example, the value can be 13."
       required: true
       schema:
         type: integer
     treatySuffix:
       name: "treatySuffix"
       in: path
-      description: "The treaty’s partition letter value. For example, the value can be A."
+      description: "The treaty's partition letter value. For example, the value can be A."
       required: true
       schema:
         type: string
