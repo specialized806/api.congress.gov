@@ -4201,6 +4201,35 @@ components:
           type: string
           format: url
           example: "https://api.congress.gov/v3/bill/116/hr/6395?format=json"
+    associatedNomination:
+      type: object
+      properties:
+        congress:
+          type: integer
+          example: 116
+        number:
+          type: integer
+          example: 614
+        part:
+          type: string
+          example: "00"
+        url:
+          type: string
+          format: url
+          example: "https://api.congress.gov/v3/nomination/116/614?format=json"
+    associatedTreaty:
+      type: object
+      properties:
+        congress:
+          type: integer
+          example: 112
+        number:
+          type: integer
+          example: 8
+        url:
+          type: string
+          format: url
+          example: "https://api.congress.gov/v3/treaty/112/8?format=json"
     CommitteeReportsNumber:
       type: array
       items:
@@ -4498,8 +4527,12 @@ components:
             $ref: '#/components/schemas/associatedBill'
         nominations:
           type: array
+          items:
+            $ref: '#/components/schemas/associatedNomination'
         treaties:
           type: array
+          items:
+            $ref: '#/components/schemas/associatedTreaty'
     video:
       type: object
       properties:
