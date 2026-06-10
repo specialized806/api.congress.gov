@@ -5794,6 +5794,8 @@ components:
               type: object
             relatedDocs:
               type: array
+              items: # left unspecified as it appears
+                type: object
             resolutionText:
               type: string
               example: ""
