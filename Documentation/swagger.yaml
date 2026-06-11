@@ -4406,7 +4406,7 @@ components:
         updateDate:
           type: string
           format: date-time
-          example: "2022-08-01 21:19:33+00:00" # this is the format actually returned
+          example: "2022-08-01T21:19:33Z"
         url:
           type: string
           format: url
@@ -4470,7 +4470,7 @@ components:
         updateDate:
           type: string
           format: date-time
-          example: "2022-08-01 21:19:33+00:00" # this is the format actually returned
+          example: "2022-08-01T21:19:33Z"
     committeePrintText:
       type: object
       properties:
