@@ -1,6 +1,13 @@
 This change log will contain information on updates to the Congress.gov API, the impacted endpoints, and the expected production release date. Changes not yet in production will be prefaced by UPCOMING. Once in production, that preface will be changed to COMPLETED. Milestones are also used to tag issues in this repository with expected production release date information.
+# UPCOMING July 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/64)
+**Expected Production Release Date: July 20, 2026**
+## Change #1
+### Impacted endpoints: `/committee-print`, `/committee-print/{congress}`, `/committee-print/{congress}/{chamber}`, `/committee-print/{congress}/{chamber}/{jacketNumber}`
+The values of `updateDate` fields in responses from the endpoints listed above will be changed to use [RFC 3339](https://www.rfc-editor.org/info/rfc3339/). This change is to:
+1. Ensure valid [JSON Schema](https://json-schema.org/understanding-json-schema/reference/type#dates-and-times) for the types specified for these endpoints [here](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/swagger.yaml#L4370) and [here](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/swagger.yaml#L4434)
+2. Increase consistency of `date-time` fields across the API specification.
+See also [#456](https://github.com/LibraryOfCongress/api.congress.gov/issues/456).
 # Completed June 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/62)
-**Expected Production Release Date: June 8, 2026**
 ## Change #1
 ### Impacted endpoint: /congress
 For each item returned in the congresses field, the number field is now present. This is related to [Issue #286](https://github.com/LibraryOfCongress/api.congress.gov/issues/286). 
@@ -11,7 +18,6 @@ A 500 error message in the treaty actions-level endpoint has been fixed. This is
 ### Impacted endpoints: /v3/treaty/{congress}/{treatyNumber}/actions, /v3/treaty/{congress}/{treatyNumber}/committees
 The actions-level and committees-level treaty endpoints have been modified so that data is returned for both errata and non-errata versions of the treaty. This is related to [Issue #428](https://github.com/LibraryOfCongress/api.congress.gov/issues/428).
 # Completed May 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/61)
-**Expected Production Release Date: May 18, 2026**
 ## Change #1
 ### Impacted endpoints: /member/{bioguideId}/sponsored-legislation, /member/{bioguideId}/cosponsored-legislation
 An optional sort by introduced date or sponsored date ascending and descending has been enabled in these endpoints. 
