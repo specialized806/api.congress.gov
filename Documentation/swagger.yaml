@@ -77,6 +77,8 @@ paths:
                 $ref: '#/components/schemas/Bill'
         '400':
           description: Invalid status value
+        '404':
+          description: Not found
   /bill/{congress}:
     get:
       tags:
@@ -5971,6 +5973,8 @@ components:
       schema:
         type: integer
         format: int32
+        minimum: 1
+        maximum: 119
     billType:
       name: billType
       in: path
@@ -5978,6 +5982,15 @@ components:
       required: true
       schema:
         type: string
+        enum:
+          - hr
+          - s
+          - hjres
+          - sjres
+          - hconres
+          - sconres
+          - hres
+          - sres
     billNumber:
       name: "billNumber"
       in: "path"
@@ -5985,10 +5998,11 @@ components:
       required: true
       schema:
         type: "integer"
+        minimum: 1
     lawType:
       name: lawType
       in: path
-      description: The law type. Values are either 'pub' or ‘priv.'
+      description: The law type. Values are either 'pub' or 'priv.'
       required: true
       schema:
         type: string
@@ -6019,9 +6033,7 @@ components:
       description: "The status of the member. Use true or false"
       schema:
         type: boolean
-        enum:
-          - true
-          - false
+        example: true
     bioguideId:
       name: "bioguideId"
       in: path
@@ -6101,9 +6113,7 @@ components:
       required: false
       schema:
         type: boolean
-        enum:
-          - true
-          - false
+        example: true
     reportType:
       name: "reportType"
       in: path
