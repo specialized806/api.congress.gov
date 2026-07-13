@@ -92,7 +92,7 @@ def get_bill_action(client):
     data, _ = client.get(endpoint)
     root = parse_xml(data)
 
-    print_items(root.findall(".//actions/item"))  # https://professionalsuperhero.com/
+    print_items(root.findall(".//actions/item"))
 
 
 def get_bill_amendments(client):
