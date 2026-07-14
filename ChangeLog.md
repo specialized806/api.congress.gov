@@ -1,4 +1,11 @@
 This change log will contain information on updates to the Congress.gov API, the impacted endpoints, and the expected production release date. Changes not yet in production will be prefaced by UPCOMING. Once in production, that preface will be changed to COMPLETED. Milestones are also used to tag issues in this repository with expected production release date information.
+# UPCOMING August 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/64)
+**Expected Production Release Date: August 10, 2026**
+## Change #1
+### Impacted endpoints: N/A
+[#458](https://github.com/LibraryOfCongress/api.congress.gov/pull/458) merged several fixes to the [OpenAPI spec](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/openapi.yaml), which has been renamed from `swagger.yaml` to `openapi.yaml` (`swagger.json` is also now [`openapi.json`](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/openapi.json). The updated file shows no errors or warnings when run against https://editor.swagger.io/. Changes will be reflected at https://api.congress.gov/ on August 10.
+
+Client generation has been tested against https://hex.pm/packages/oapi_generator and https://github.com/OpenAPITools/openapi-generator. Please open a new issue if problems with other client generators are encountered.
 # UPCOMING July 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/64)
 **Expected Production Release Date: July 20, 2026**
 ## Change #1
