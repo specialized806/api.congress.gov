@@ -1,4 +1,4 @@
-# House Roll Call Votes endpoints (Beta)
+# House Roll Call Votes endpoints
 
 ## Coverage
 
