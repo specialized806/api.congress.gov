@@ -72,6 +72,7 @@
   "paths" : {
     "/bill" : {
       "get" : {
+        "operationId" : "getBills",
         "tags" : [ "bill" ],
         "summary" : "Returns a list of bills sorted by date of latest action",
         "description" : "Returns a list of bills sorted by date of latest action",
@@ -113,6 +114,7 @@
     },
     "/bill/{congress}" : {
       "get" : {
+        "operationId" : "getBillsByCongress",
         "tags" : [ "bill" ],
         "summary" : "Returns a list of bills filtered by the specified congress, sorted by date of latest action",
         "description" : "Returns a list of bills filtered by the specified congress, sorted by date of latest action",
@@ -160,6 +162,7 @@
     },
     "/bill/{congress}/{billType}" : {
       "get" : {
+        "operationId" : "getBillsByCongressAndBillType",
         "tags" : [ "bill" ],
         "summary" : "Returns a list of bills filtered by the specified congress and bill type, sorted by date of latest action.",
         "description" : "Returns a list of bills filtered by the specified congress and bill type, sorted by date of latest action.",
@@ -202,6 +205,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}" : {
       "get" : {
+        "operationId" : "getBill",
         "tags" : [ "bill" ],
         "summary" : "Returns detailed information for a specified bill.",
         "description" : "Returns detailed information for a specified bill.",
@@ -246,6 +250,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/actions" : {
       "get" : {
+        "operationId" : "getBillActions",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of actions on a specified bill.",
         "description" : "Returns the list of actions on a specified bill.",
@@ -290,6 +295,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/amendments" : {
       "get" : {
+        "operationId" : "getBillAmendments",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of amendments to a specified bill.",
         "description" : "Returns the list of amendments to a specified bill.",
@@ -334,6 +340,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/committees" : {
       "get" : {
+        "operationId" : "getBillCommittees",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of committees associated with a specified bill.",
         "description" : "Returns the list of committees associated with a specified bill.",
@@ -374,6 +381,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/cosponsors" : {
       "get" : {
+        "operationId" : "getBillCosponsors",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of cosponsors on a specified bill.",
         "description" : "Returns the list of cosponsors on a specified bill.",
@@ -420,6 +428,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/relatedbills" : {
       "get" : {
+        "operationId" : "getBillRelatedBills",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of related bills to a specified bill.",
         "description" : "Returns the list of related bills to a specified bill.",
@@ -460,6 +469,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/subjects" : {
       "get" : {
+        "operationId" : "getBillSubjects",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of legislative subjects on a specified bill.",
         "description" : "Returns the list of legislative subjects on a specified bill.",
@@ -504,6 +514,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/summaries" : {
       "get" : {
+        "operationId" : "getBillSummaries",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of summaries for a specified bill.",
         "description" : "Returns the list of summaries for a specified bill.",
@@ -544,6 +555,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/text" : {
       "get" : {
+        "operationId" : "getBillTexts",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of text versions for a specified bill.",
         "description" : "Returns the list of text versions for a specified bill.",
@@ -584,6 +596,7 @@
     },
     "/bill/{congress}/{billType}/{billNumber}/titles" : {
       "get" : {
+        "operationId" : "getBillTitles",
         "tags" : [ "bill" ],
         "summary" : "Returns the list of titles for a specified bill.",
         "description" : "Returns the list of titles for a specified bill.",
@@ -628,6 +641,7 @@
     },
     "/law/{congress}" : {
       "get" : {
+        "operationId" : "getLawsByCongress",
         "tags" : [ "bill" ],
         "summary" : "Returns a list of laws filtered by the specified congress.",
         "description" : "Returns a list of laws filtered by the specified congress.",
@@ -664,6 +678,7 @@
     },
     "/law/{congress}/{lawType}" : {
       "get" : {
+        "operationId" : "getLawsByCongressAndLawType",
         "tags" : [ "bill" ],
         "summary" : "Returns a list of laws filtered by specified congress and law type (public or private).",
         "description" : "Returns a list of laws filtered by specified congress and law type (public or private).",
@@ -702,6 +717,7 @@
     },
     "/law/{congress}/{lawType}/{lawNumber}" : {
       "get" : {
+        "operationId" : "getLaw",
         "tags" : [ "bill" ],
         "summary" : "Returns a law filtered by specified congress, law type (public or private), and law number.",
         "description" : "Returns a law filtered by specified congress, law type (public or private), and law number.",
@@ -742,6 +758,7 @@
     },
     "/amendment" : {
       "get" : {
+        "operationId" : "getAmendments",
         "tags" : [ "amendments" ],
         "summary" : "Returns a list of amendments sorted by date of latest action.",
         "description" : "Returns a list of amendments sorted by date of latest action.",
@@ -780,6 +797,7 @@
     },
     "/amendment/{congress}" : {
       "get" : {
+        "operationId" : "getAmendmentsByCongress",
         "tags" : [ "amendments" ],
         "summary" : "Returns a list of amendments filtered by the specified congress, sorted by date of latest action.",
         "description" : "Returns a list of amendments filtered by the specified congress, sorted by date of latest action.",
@@ -820,6 +838,7 @@
     },
     "/amendment/{congress}/{amendmentType}" : {
       "get" : {
+        "operationId" : "getAmendmentsByCongressAndType",
         "tags" : [ "amendments" ],
         "summary" : "Returns a list of amendments filtered by the specified congress and amendment type, sorted by date of latest action.",
         "description" : "Returns a list of amendments filtered by the specified congress and amendment type, sorted by date of latest action.",
@@ -862,6 +881,7 @@
     },
     "/amendment/{congress}/{amendmentType}/{amendmentNumber}" : {
       "get" : {
+        "operationId" : "getAmendment",
         "tags" : [ "amendments" ],
         "summary" : "Returns detailed information for a specified amendment.",
         "description" : "Returns detailed information for a specified amendment.",
@@ -906,6 +926,7 @@
     },
     "/amendment/{congress}/{amendmentType}/{amendmentNumber}/actions" : {
       "get" : {
+        "operationId" : "getAmendmentActions",
         "tags" : [ "amendments" ],
         "summary" : "Returns the list of actions on a specified amendment.",
         "description" : "Returns the list of actions on a specified amendment.",
@@ -946,6 +967,7 @@
     },
     "/amendment/{congress}/{amendmentType}/{amendmentNumber}/cosponsors" : {
       "get" : {
+        "operationId" : "getAmendmentCosponsors",
         "tags" : [ "amendments" ],
         "summary" : "Returns the list of cosponsors on a specified amendment.",
         "description" : "Returns the list of cosponsors on a specified amendment.",
@@ -986,6 +1008,7 @@
     },
     "/amendment/{congress}/{amendmentType}/{amendmentNumber}/amendments" : {
       "get" : {
+        "operationId" : "getAmendmentAmendments",
         "tags" : [ "amendments" ],
         "summary" : "Returns the list of amendments to a specified amendment.",
         "description" : "Returns the list of amendments to a specified amendment.",
@@ -1026,6 +1049,7 @@
     },
     "/amendment/{congress}/{amendmentType}/{amendmentNumber}/text" : {
       "get" : {
+        "operationId" : "geAmendmentTexts",
         "tags" : [ "amendments" ],
         "summary" : "Returns the list of text versions for a specified amendment from the 117th Congress onwards.",
         "description" : "Returns the list of text versions for a specified amendment from the 117th Congress onwards.",
@@ -1066,6 +1090,7 @@
     },
     "/summaries" : {
       "get" : {
+        "operationId" : "getSummaries",
         "tags" : [ "summaries" ],
         "summary" : "Returns a list of summaries sorted by date of last update.",
         "description" : "Returns a list of summaries sorted by date of last update.",
@@ -1106,6 +1131,7 @@
     },
     "/summaries/{congress}" : {
       "get" : {
+        "operationId" : "getSummariesByCongress",
         "tags" : [ "summaries" ],
         "summary" : "Returns a list of summaries filtered by congress, sorted by date of last update.",
         "description" : "Returns a list of summaries filtered by congress, sorted by date of last update.",
@@ -1148,6 +1174,7 @@
     },
     "/summaries/{congress}/{billType}" : {
       "get" : {
+        "operationId" : "getSummariesByCongressAndBillType",
         "tags" : [ "summaries" ],
         "summary" : "Returns a list of summaries filtered by congress and by bill type, sorted by date of last update.",
         "description" : "Returns a list of summaries filtered by congress and by bill type, sorted by date of last update.",
@@ -1192,6 +1219,7 @@
     },
     "/congress" : {
       "get" : {
+        "operationId" : "getCongresses",
         "tags" : [ "congress" ],
         "summary" : "Returns a list of congresses and congressional sessions.",
         "description" : "Returns a list of congresses and congressional sessions.",
@@ -1226,6 +1254,7 @@
     },
     "/congress/{congress}" : {
       "get" : {
+        "operationId" : "getCongressByNumber",
         "tags" : [ "congress" ],
         "summary" : "Returns a list of congresses and congressional sessions.",
         "description" : "Returns a list of congresses and congressional sessions.",
@@ -1262,6 +1291,7 @@
     },
     "/congress/current" : {
       "get" : {
+        "operationId" : "getCurrentCongress",
         "tags" : [ "congress" ],
         "summary" : "Returns a list of congresses and congressional sessions.",
         "description" : "Returns a list of congresses and congressional sessions.",
@@ -1296,6 +1326,7 @@
     },
     "/member" : {
       "get" : {
+        "operationId" : "getMembers",
         "tags" : [ "member" ],
         "summary" : "Returns a list of congressional members.",
         "description" : "Returns a list of congressional members.",
@@ -1336,6 +1367,7 @@
     },
     "/member/{bioguideId}" : {
       "get" : {
+        "operationId" : "getMemberByBioguideId",
         "tags" : [ "member" ],
         "summary" : "Returns detailed information for a specified congressional member.",
         "description" : "Returns detailed information for a specified congressional member.",
@@ -1368,6 +1400,7 @@
     },
     "/member/{bioguideId}/sponsored-legislation" : {
       "get" : {
+        "operationId" : "getMemberSponsoredLegislation",
         "tags" : [ "member" ],
         "summary" : "Returns the list of legislation sponsored by a specified congressional member.",
         "description" : "Returns the list of legislation sponsored by a specified congressional member.",
@@ -1404,6 +1437,7 @@
     },
     "/member/{bioguideId}/cosponsored-legislation" : {
       "get" : {
+        "operationId" : "getMemberCosponsoredLegislation",
         "tags" : [ "member" ],
         "summary" : "Returns the list of legislation cosponsored by a specified congressional member.",
         "description" : "Returns the list of legislation cosponsored by a specified congressional member.",
@@ -1440,6 +1474,7 @@
     },
     "/member/congress/{congress}" : {
       "get" : {
+        "operationId" : "getMembersByCongressNumber",
         "tags" : [ "member" ],
         "summary" : "Returns the list of members specified by Congress.",
         "description" : "Returns the list of members specified by Congress.",
@@ -1478,6 +1513,7 @@
     },
     "/member/{stateCode}" : {
       "get" : {
+        "operationId" : "getMembersByStateCode",
         "tags" : [ "member" ],
         "summary" : "Returns a list of members filtered by state.",
         "description" : "Returns a list of members filtered by state.",
@@ -1514,6 +1550,7 @@
     },
     "/member/{stateCode}/{district}" : {
       "get" : {
+        "operationId" : "getMembersByStateAndDistrict",
         "tags" : [ "member" ],
         "summary" : "Returns a list of members filtered by state and district.",
         "description" : "Returns a list of members filtered by state and district.",
@@ -1550,6 +1587,7 @@
     },
     "/member/congress/{congress}/{stateCode}/{district}" : {
       "get" : {
+        "operationId" : "getMembersByCongressStateAndDistrict",
         "tags" : [ "member" ],
         "summary" : "Returns a list of members filtered by congress, state and district.",
         "description" : "Returns a list of members filtered by congress, state and district.",
@@ -1588,6 +1626,7 @@
     },
     "/house-vote" : {
       "get" : {
+        "operationId" : "getHouseVotes",
         "tags" : [ "house-vote" ],
         "summary" : "Returns House of Representatives roll call vote data from the API. This endpoint is currently in beta.",
         "description" : "Returns House of Representatives roll call vote data from the API. This endpoint is currently in beta.",
@@ -1622,6 +1661,7 @@
     },
     "/house-vote/{congress}" : {
       "get" : {
+        "operationId" : "getHouseVotesByCongress",
         "tags" : [ "house-vote" ],
         "summary" : "Returns House of Representatives roll call vote data from the API filtered by the specified Congress. This endpoint is currently in beta.",
         "description" : "Returns House of Representatives roll call vote data from the API filtered by the specified Congress. This endpoint is currently in beta.",
@@ -1658,6 +1698,7 @@
     },
     "/house-vote/{congress}/{session}" : {
       "get" : {
+        "operationId" : "getHouseVotesByCongressAndSession",
         "tags" : [ "house-vote" ],
         "summary" : "Returns House of Representatives roll call vote data from the API filtered by the specified Congress and session. This endpoint is currently in beta.",
         "description" : "Returns House of Representatives roll call vote data from the API filtered by the specified Congress and session. This endpoint is currently in beta.",
@@ -1696,6 +1737,7 @@
     },
     "/house-vote/{congress}/{session}/{voteNumber}" : {
       "get" : {
+        "operationId" : "getHouseVoteByCongressSessionAndVoteNumber",
         "tags" : [ "house-vote" ],
         "summary" : "Returns detailed information for a specified House of Representatives roll call vote. This endpoint is currently in beta.",
         "description" : "Returns detailed information for a specified House of Representatives roll call vote. This endpoint is currently in beta.",
@@ -1736,6 +1778,7 @@
     },
     "/house-vote/{congress}/{session}/{voteNumber}/members" : {
       "get" : {
+        "operationId" : "getHouseVoteMemberVotes",
         "tags" : [ "house-vote" ],
         "summary" : "Returns detailed information for how members voted on a specified House of Representatives roll call vote. This endpoint is currently in beta.",
         "description" : "Returns detailed information for how members voted on a specified House of Representatives roll call vote. This endpoint is currently in beta.",
@@ -1776,6 +1819,7 @@
     },
     "/committee" : {
       "get" : {
+        "operationId" : "getCommittees",
         "tags" : [ "committee" ],
         "summary" : "Returns a list of congressional committees.",
         "description" : "Returns a list of congressional committees.",
@@ -1814,6 +1858,7 @@
     },
     "/committee/{chamber}" : {
       "get" : {
+        "operationId" : "getCommitteesByChamber",
         "tags" : [ "committee" ],
         "summary" : "Returns a list of congressional committees filtered by the specified chamber.",
         "description" : "Returns a list of congressional committees filtered by the specified chamber.",
@@ -1854,6 +1899,7 @@
     },
     "/committee/{congress}" : {
       "get" : {
+        "operationId" : "getCommitteesByCongress",
         "tags" : [ "committee" ],
         "summary" : "Returns a list of congressional committees filtered by the specified congress.",
         "description" : "Returns a list of congressional committees filtered by the specified congress.",
@@ -1894,6 +1940,7 @@
     },
     "/committee/{congress}/{chamber}" : {
       "get" : {
+        "operationId" : "getCommitteesByCongressAndChamber",
         "tags" : [ "committee" ],
         "summary" : "Returns a list of congressional committees filtered by the specified congress and chamber.",
         "description" : "Returns a list of congressional committees filtered by the specified congress and chamber.",
@@ -1936,6 +1983,7 @@
     },
     "/committee/{chamber}/{committeeCode}" : {
       "get" : {
+        "operationId" : "getCommitteeByChamberAndCode",
         "tags" : [ "committee" ],
         "summary" : "Returns detailed information for a specified congressional committee.",
         "description" : "Returns detailed information for a specified congressional committee.",
@@ -1970,6 +2018,7 @@
     },
     "/committee/{congress}/{chamber}/{committeeCode}" : {
       "get" : {
+        "operationId" : "getCommitteeByCongressChamberAndCode",
         "tags" : [ "committee" ],
         "summary" : "Returns detailed information for a specified congressional committee filtered by the specified Congress.",
         "description" : "Returns detailed information for a specified congressional committee filtered by the specified Congress.",
@@ -2006,6 +2055,7 @@
     },
     "/committee/{chamber}/{committeeCode}/bills" : {
       "get" : {
+        "operationId" : "getCommitteeBills",
         "tags" : [ "committee" ],
         "summary" : "Returns the list of legislation associated with the specified congressional committee.",
         "description" : "Returns the list of legislation associated with the specified congressional committee.",
@@ -2048,6 +2098,7 @@
     },
     "/committee/{chamber}/{committeeCode}/reports" : {
       "get" : {
+        "operationId" : "getCommitteeReportsByCommittee",
         "tags" : [ "committee" ],
         "summary" : "Returns the list of committee reports associated with a specified congressional committee.",
         "description" : "Returns the list of committee reports associated with a specified congressional committee.",
@@ -2090,6 +2141,7 @@
     },
     "/committee/{chamber}/{committeeCode}/nominations" : {
       "get" : {
+        "operationId" : "getCommitteeNominations",
         "tags" : [ "committee" ],
         "summary" : "Returns the list of nominations associated with a specified congressional committee.",
         "description" : "Returns the list of nominations associated with a specified congressional committee.",
@@ -2128,6 +2180,7 @@
     },
     "/committee/{chamber}/{committeeCode}/house-communication" : {
       "get" : {
+        "operationId" : "getCommitteeHouseCommunications",
         "tags" : [ "committee" ],
         "summary" : "Returns the list of House communications associated with a specified congressional committee.",
         "description" : "Returns the list of House communications associated with a specified congressional committee.",
@@ -2166,6 +2219,7 @@
     },
     "/committee/{chamber}/{committeeCode}/senate-communication" : {
       "get" : {
+        "operationId" : "getCommitteeSenateCommunications",
         "tags" : [ "committee" ],
         "summary" : "Returns the list of Senate communications associated with a specified congressional committee.",
         "description" : "Returns the list of Senate communications associated with a specified congressional committee.",
@@ -2204,6 +2258,7 @@
     },
     "/committee-report" : {
       "get" : {
+        "operationId" : "getCommitteeReports",
         "tags" : [ "committee-report" ],
         "summary" : "Returns the list of committee reports.",
         "description" : "Returns the list of committee reports.",
@@ -2244,6 +2299,7 @@
     },
     "/committee-report/{congress}" : {
       "get" : {
+        "operationId" : "getCommitteeReportByCongress",
         "tags" : [ "committee-report" ],
         "summary" : "Returns the list of committee reports filtered by specified congress.",
         "description" : "Returns the list of committee reports filtered by specified congress.",
@@ -2286,6 +2342,7 @@
     },
     "/committee-report/{congress}/{reportType}" : {
       "get" : {
+        "operationId" : "getCommitteeReportsByCongressAndType",
         "tags" : [ "committee-report" ],
         "summary" : "Returns the list of committee reports filtered by specified congress and report type.",
         "description" : "Returns the list of committee reports filtered by specified congress and report type.",
@@ -2330,6 +2387,7 @@
     },
     "/committee-report/{congress}/{reportType}/{reportNumber}" : {
       "get" : {
+        "operationId" : "getCommitteeReportByCongressTypeAndNumber",
         "tags" : [ "committee-report" ],
         "summary" : "Returns detailed information for a specified committee report.",
         "description" : "Returns detailed information for a specified committee report.",
@@ -2366,6 +2424,7 @@
     },
     "/committee-report/{congress}/{reportType}/{reportNumber}/text" : {
       "get" : {
+        "operationId" : "getCommitteeReportText",
         "tags" : [ "committee-report" ],
         "summary" : "Returns the list of texts for a specified committee report.",
         "description" : "Returns the list of texts for a specified committee report.",
@@ -2406,6 +2465,7 @@
     },
     "/committee-print" : {
       "get" : {
+        "operationId" : "getCommitteePrints",
         "tags" : [ "committee-print" ],
         "summary" : "Returns a list of committee prints.",
         "description" : "Returns a list of committee prints.",
@@ -2444,6 +2504,7 @@
     },
     "/committee-print/{congress}" : {
       "get" : {
+        "operationId" : "getCommitteePrintsByCongress",
         "tags" : [ "committee-print" ],
         "summary" : "Returns a list of committee prints filtered by the specified congress.",
         "description" : "Returns a list of committee prints filtered by the specified congress.",
@@ -2484,6 +2545,7 @@
     },
     "/committee-print/{congress}/{chamber}" : {
       "get" : {
+        "operationId" : "getCommitteePrintsByCongressAndChamber",
         "tags" : [ "committee-print" ],
         "summary" : "Returns a list of committee prints filtered by the specified congress and chamber.",
         "description" : "Returns a list of committee prints filtered by the specified congress and chamber.",
@@ -2526,6 +2588,7 @@
     },
     "/committee-print/{congress}/{chamber}/{jacketNumber}" : {
       "get" : {
+        "operationId" : "getCommitteePrintByCongressChamberAndJacketNumber",
         "tags" : [ "committee-print" ],
         "summary" : "Returns detailed information for a specified committee print.",
         "description" : "Returns detailed information for a specified committee print.",
@@ -2562,6 +2625,7 @@
     },
     "/committee-print/{congress}/{chamber}/{jacketNumber}/text" : {
       "get" : {
+        "operationId" : "getCommitteePrintText",
         "tags" : [ "committee-print" ],
         "summary" : "Returns the list of texts for a specified committee print.",
         "description" : "Returns the list of texts for a specified committee print.",
@@ -2602,6 +2666,7 @@
     },
     "/committee-meeting" : {
       "get" : {
+        "operationId" : "getCommitteeMeetings",
         "tags" : [ "committee-meeting" ],
         "summary" : "Returns a list of committee meetings.",
         "description" : "Returns a list of committee meetings.",
@@ -2640,6 +2705,7 @@
     },
     "/committee-meeting/{congress}" : {
       "get" : {
+        "operationId" : "getCommitteeMeetingsByCongress",
         "tags" : [ "committee-meeting" ],
         "summary" : "Returns a list of committee meetings filtered by the specified congress.",
         "description" : "Returns a list of committee meetings filtered by the specified congress.",
@@ -2680,6 +2746,7 @@
     },
     "/committee-meeting/{congress}/{chamber}" : {
       "get" : {
+        "operationId" : "getCommitteeMeetingsByCongressAndChamber",
         "tags" : [ "committee-meeting" ],
         "summary" : "Returns a list of committee meetings filtered by the specified congress and chamber.",
         "description" : "Returns a list of committee meetings filtered by the specified congress and chamber.",
@@ -2722,6 +2789,7 @@
     },
     "/committee-meeting/{congress}/{chamber}/{eventId}" : {
       "get" : {
+        "operationId" : "getCommitteeMeetingByCongressChamberAndEventId",
         "tags" : [ "committee-meeting" ],
         "summary" : "Returns detailed information for a specified committee meeting.",
         "description" : "Returns detailed information for a specified committee meeting.",
@@ -2758,6 +2826,7 @@
     },
     "/hearing" : {
       "get" : {
+        "operationId" : "getHearings",
         "tags" : [ "hearing" ],
         "summary" : "Returns a list of hearings.",
         "description" : "Returns a list of hearings.",
@@ -2792,6 +2861,7 @@
     },
     "/hearing/{congress}" : {
       "get" : {
+        "operationId" : "getHearingsByCongress",
         "tags" : [ "hearing" ],
         "summary" : "Returns a list of hearings filtered by specified congress.",
         "description" : "Returns a list of hearings filtered by specified congress.",
@@ -2828,6 +2898,7 @@
     },
     "/hearing/{congress}/{chamber}" : {
       "get" : {
+        "operationId" : "getHearingsByCongressAndChamber",
         "tags" : [ "hearing" ],
         "summary" : "Returns a list of hearings filtered by specified congress and chamber.",
         "description" : "Returns a list of hearings filtered by specified congress and chamber.",
@@ -2866,6 +2937,7 @@
     },
     "/hearing/{congress}/{chamber}/{jacketNumber}" : {
       "get" : {
+        "operationId" : "getHearingByCongressChamberAndJacketNumber",
         "tags" : [ "hearing" ],
         "summary" : "Returns detailed information for a specified hearing.",
         "description" : "Returns detailed information for a specified hearing.",
@@ -2906,6 +2978,7 @@
     },
     "/congressional-record" : {
       "get" : {
+        "operationId" : "getCongressionalRecords",
         "tags" : [ "congressional-record" ],
         "summary" : "Returns a list of congressional record issues sorted by most recent.",
         "description" : "Returns a list of congressional record issues sorted by most recent.",
@@ -2946,6 +3019,7 @@
     },
     "/daily-congressional-record" : {
       "get" : {
+        "operationId" : "getDailyCongressionalRecords",
         "tags" : [ "daily-congressional-record" ],
         "summary" : "Returns a list of daily congressional record issues sorted by most recent.",
         "description" : "Returns a list of daily congressional record issues sorted by most recent.",
@@ -2980,6 +3054,7 @@
     },
     "/daily-congressional-record/{volumeNumber}" : {
       "get" : {
+        "operationId" : "getDailyCongressionalRecordsByVolumeNumber",
         "tags" : [ "daily-congressional-record" ],
         "summary" : "Returns a list of daily Congressional Records filtered by the specified volume number.",
         "description" : "Returns a list of daily Congressional Records filtered by the specified volume number.",
@@ -3016,6 +3091,7 @@
     },
     "/daily-congressional-record/{volumeNumber}/{issueNumber}" : {
       "get" : {
+        "operationId" : "getDailyCongressionalRecordIssue",
         "tags" : [ "daily-congressional-record" ],
         "summary" : "Returns a list of daily Congressional Records filtered by the specified volume number and specified issue number.",
         "description" : "Returns a list of daily Congressional Records filtered by the specified volume number and specified issue number.",
@@ -3054,6 +3130,7 @@
     },
     "/daily-congressional-record/{volumeNumber}/{issueNumber}/articles" : {
       "get" : {
+        "operationId" : "getDailyCongressionalRecordIssueArticles",
         "tags" : [ "daily-congressional-record" ],
         "summary" : "Returns a list of daily Congressional Record articles filtered by the specified volume number and specified issue number.",
         "description" : "Returns a list of daily Congressional Record articles filtered by the specified volume number and specified issue number.",
@@ -3092,6 +3169,7 @@
     },
     "/bound-congressional-record" : {
       "get" : {
+        "operationId" : "getBoundCongressionalRecords",
         "tags" : [ "bound-congressional-record" ],
         "summary" : "Returns a list of bound congressional records issues sorted by most recent.",
         "description" : "Returns a list of bound congressional record issues sorted by most recent.",
@@ -3126,6 +3204,7 @@
     },
     "/bound-congressional-record/{year}" : {
       "get" : {
+        "operationId" : "getBoundCongressionalRecordsByYear",
         "tags" : [ "bound-congressional-record" ],
         "summary" : "Returns a list of bound congressional records issues sorted by most recent.",
         "description" : "Returns a list of bound congressional record issues sorted by most recent.",
@@ -3162,6 +3241,7 @@
     },
     "/bound-congressional-record/{year}/{month}" : {
       "get" : {
+        "operationId" : "getBoundCongressionalRecordsByYearAndMonth",
         "tags" : [ "bound-congressional-record" ],
         "summary" : "Returns a list of bound congressional records issues sorted by most recent.",
         "description" : "Returns a list of bound congressional record issues sorted by most recent.",
@@ -3200,6 +3280,7 @@
     },
     "/bound-congressional-record/{year}/{month}/{day}" : {
       "get" : {
+        "operationId" : "getBoundCongressionalRecordsByYearMonthAndDay",
         "tags" : [ "bound-congressional-record" ],
         "summary" : "Returns a list of bound congressional records issues sorted by most recent.",
         "description" : "Returns a list of bound congressional record issues sorted by most recent.",
@@ -3240,6 +3321,7 @@
     },
     "/house-communication" : {
       "get" : {
+        "operationId" : "getHouseCommunications",
         "tags" : [ "house-communication" ],
         "summary" : "Returns a list of House communications.",
         "description" : "Returns a list of House communications.",
@@ -3274,6 +3356,7 @@
     },
     "/house-communication/{congress}" : {
       "get" : {
+        "operationId" : "getHouseCommunicationsByCongress",
         "tags" : [ "house-communication" ],
         "summary" : "Returns a list of House communications filtered by the specified congress.",
         "description" : "Returns a list of House communications filtered by the specified congress.",
@@ -3310,6 +3393,7 @@
     },
     "/house-communication/{congress}/{communicationType}" : {
       "get" : {
+        "operationId" : "getHouseCommunicationsByCongressAndType",
         "tags" : [ "house-communication" ],
         "summary" : "Returns a list of House communications filtered by the specified congress and communication type..",
         "description" : "Returns a list of House communications filtered by the specified congress and communication type.",
@@ -3348,6 +3432,7 @@
     },
     "/house-communication/{congress}/{communicationType}/{communicationNumber}" : {
       "get" : {
+        "operationId" : "getHouseCommunicationsByCongressTypeAndNumber",
         "tags" : [ "house-communication" ],
         "summary" : "Returns a list of House communications filtered by the specified congress and communication type..",
         "description" : "Returns a list of House communications filtered by the specified congress and communication type.",
@@ -3384,6 +3469,7 @@
     },
     "/house-requirement" : {
       "get" : {
+        "operationId" : "getHouseRequirements",
         "tags" : [ "house-requirement" ],
         "summary" : "Returns a list of House requirements.",
         "description" : "Returns a list of House requirements.",
@@ -3418,6 +3504,7 @@
     },
     "/house-requirement/{requirementNumber}" : {
       "get" : {
+        "operationId" : "getHouseRequirementByNumber",
         "tags" : [ "house-requirement" ],
         "summary" : "Returns detailed information for a specified House requirement.",
         "description" : "Returns detailed information for a specified House requirement.",
@@ -3450,6 +3537,7 @@
     },
     "/house-requirement/{requirementNumber}/matching-communications" : {
       "get" : {
+        "operationId" : "getHouseRequirementMatchingCommunications",
         "tags" : [ "house-requirement" ],
         "summary" : "Returns a list of matching communications to a House requirement.",
         "description" : "Returns a list of matching communications to a House requirement.",
@@ -3486,6 +3574,7 @@
     },
     "/senate-communication" : {
       "get" : {
+        "operationId" : "getSenateCommunications",
         "tags" : [ "senate-communication" ],
         "summary" : "Returns a list of Senate communications.",
         "description" : "Returns a list of Senate communications.",
@@ -3520,6 +3609,7 @@
     },
     "/senate-communication/{congress}" : {
       "get" : {
+        "operationId" : "getSenateCommunicationsByCongress",
         "tags" : [ "senate-communication" ],
         "summary" : "Returns a list of Senate communications filtered by the specified congress.",
         "description" : "Returns a list of Senate communications filtered by the specified congress.",
@@ -3556,6 +3646,7 @@
     },
     "/senate-communication/{congress}/{communicationType}" : {
       "get" : {
+        "operationId" : "getSenateCommunicationsByCongressAndType",
         "tags" : [ "senate-communication" ],
         "summary" : "Returns a list of Senate communications filtered by the specified congress and communication type..",
         "description" : "Returns a list of Senate communications filtered by the specified congress and communication type.",
@@ -3594,6 +3685,7 @@
     },
     "/senate-communication/{congress}/{communicationType}/{communicationNumber}" : {
       "get" : {
+        "operationId" : "getSenateCommunicationByCongressTypeAndNumber",
         "tags" : [ "senate-communication" ],
         "summary" : "Returns a list of Senate communications filtered by the specified congress and communication type..",
         "description" : "Returns a list of Senate communications filtered by the specified congress and communication type.",
@@ -3630,6 +3722,7 @@
     },
     "/nomination" : {
       "get" : {
+        "operationId" : "getNominations",
         "tags" : [ "nomination" ],
         "summary" : "Returns a list of nominations sorted by date received from the President.",
         "description" : "Returns a list of nominations sorted by date received from the President.",
@@ -3668,6 +3761,7 @@
     },
     "/nomination/{congress}" : {
       "get" : {
+        "operationId" : "getNominationsByCongress",
         "tags" : [ "nomination" ],
         "summary" : "Returns a list of nominations filtered by the specified congress and sorted by date received from the President.",
         "description" : "Returns a list of nominations filtered by the specified congress and sorted by date received from the President.",
@@ -3708,6 +3802,7 @@
     },
     "/nomination/{congress}/{nominationNumber}" : {
       "get" : {
+        "operationId" : "getNominationByCongressAndNumber",
         "tags" : [ "nomination" ],
         "summary" : "Returns detailed information for a specified nomination.",
         "description" : "Returns detailed information for a specified nomination.",
@@ -3742,9 +3837,10 @@
     },
     "/nomination/{congress}/{nominationNumber}/{ordinal}" : {
       "get" : {
+        "operationId" : "getNomineesForNominationPosition",
         "tags" : [ "nomination" ],
-        "summary" : "Returns the list nominees for a position within the nomination.",
-        "description" : "Returns the list nominees for a position within the nomination.",
+        "summary" : "Returns the list of nominees for a position within the nomination.",
+        "description" : "Returns the list of nominees for a position within the nomination.",
         "parameters" : [ {
           "$ref" : "#/components/parameters/congress"
         }, {
@@ -3782,6 +3878,7 @@
     },
     "/nomination/{congress}/{nominationNumber}/actions" : {
       "get" : {
+        "operationId" : "getNominationActions",
         "tags" : [ "nomination" ],
         "summary" : "Returns the list of actions on a specified nomination.",
         "description" : "Returns the list of actions on a specified nomination.",
@@ -3820,6 +3917,7 @@
     },
     "/nomination/{congress}/{nominationNumber}/committees" : {
       "get" : {
+        "operationId" : "getNominationCommittees",
         "tags" : [ "nomination" ],
         "summary" : "Returns the list of committees associated with a specified nomination.",
         "description" : "Returns the list of committees associated with a specified nomination.",
@@ -3858,6 +3956,7 @@
     },
     "/nomination/{congress}/{nominationNumber}/hearings" : {
       "get" : {
+        "operationId" : "getNominationHearings",
         "tags" : [ "nomination" ],
         "summary" : "Returns the list of printed hearings associated with a specified nomination.",
         "description" : "Returns the list of printed associated with a specified nomination.",
@@ -3896,9 +3995,10 @@
     },
     "/crsreport" : {
       "get" : {
+        "operationId" : "getCRSReports",
         "tags" : [ "crsreport" ],
-        "summary" : "Returns Congressional Research Service (CRS) report data from the API",
-        "description" : "Returns Congressional Research Service (CRS) report data from the API",
+        "summary" : "Returns a list of Congressional Research Service (CRS) reports",
+        "description" : "Returns a list of Congressional Research Service (CRS) reports",
         "parameters" : [ {
           "$ref" : "#/components/parameters/format"
         }, {
@@ -3934,9 +4034,10 @@
     },
     "/crsreport/{reportNumber}" : {
       "get" : {
+        "operationId" : "getCRSReportByNumber",
         "tags" : [ "crsreport" ],
-        "summary" : "Returns Congressional Research Service (CRS) report data from the API",
-        "description" : "Returns Congressional Research Service (CRS) report data from the API",
+        "summary" : "Returns a specific Congressional Research Service (CRS) report",
+        "description" : "Returns a specific Congressional Research Service (CRS) report",
         "parameters" : [ {
           "$ref" : "#/components/parameters/crsReportNumber"
         }, {
@@ -3966,6 +4067,7 @@
     },
     "/treaty" : {
       "get" : {
+        "operationId" : "getTreaties",
         "tags" : [ "treaty" ],
         "summary" : "Returns a list of treaties sorted by date of last update.",
         "description" : "Returns a list of treaties sorted by date of last update.",
@@ -4004,6 +4106,7 @@
     },
     "/treaty/{congress}" : {
       "get" : {
+        "operationId" : "getTreatiesByCongress",
         "tags" : [ "treaty" ],
         "summary" : "Returns a list of treaties for the specified congress, sorted by date of last update.",
         "description" : "Returns a list of treaties for the specified congress, sorted by date of last update.",
@@ -4044,6 +4147,7 @@
     },
     "/treaty/{congress}/{treatyNumber}" : {
       "get" : {
+        "operationId" : "getTreatyByCongressAndNumber",
         "tags" : [ "treaty" ],
         "summary" : "Returns detailed information for a specified treaty.",
         "description" : "Returns detailed information for a specified treaty.",
@@ -4078,6 +4182,7 @@
     },
     "/treaty/{congress}/{treatyNumber}/{treatySuffix}" : {
       "get" : {
+        "operationId" : "getTreatyPartition",
         "tags" : [ "treaty" ],
         "summary" : "Returns detailed information for a specified partitioned treaty.",
         "description" : "Returns detailed information for a specified partitioned treaty.",
@@ -4114,6 +4219,7 @@
     },
     "/treaty/{congress}/{treatyNumber}/actions" : {
       "get" : {
+        "operationId" : "getTreatyActions",
         "tags" : [ "treaty" ],
         "summary" : "Returns the list of actions on a specified treaty.",
         "description" : "Returns the list of actions on a specified treaty.",
@@ -4152,6 +4258,7 @@
     },
     "/treaty/{congress}/{treatyNumber}/{treatySuffix}/actions" : {
       "get" : {
+        "operationId" : "getTreatyPartitionActions",
         "tags" : [ "treaty" ],
         "summary" : "Returns the list of actions on a specified partitioned treaty.",
         "description" : "Returns the list of actions on a specified partitioned treaty.",
@@ -4192,6 +4299,7 @@
     },
     "/treaty/{congress}/{treatyNumber}/committees" : {
       "get" : {
+        "operationId" : "getTreatyCommittees",
         "tags" : [ "treaty" ],
         "summary" : "Returns the list of committees associated with a specified treaty.",
         "description" : "Returns the list of committees associated with a specified treaty.",
