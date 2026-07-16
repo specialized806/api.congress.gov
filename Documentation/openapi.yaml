@@ -4730,6 +4730,12 @@ components:
         meetingStatus:
           type: string
           example: "Scheduled"
+          enum:
+            - Canceled
+            - Draft
+            - Postponed
+            - Rescheduled
+            - Scheduled
         relatedItems:
           type: array
           items:

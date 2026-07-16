@@ -6998,7 +6998,8 @@
           },
           "meetingStatus" : {
             "type" : "string",
-            "example" : "Scheduled"
+            "example" : "Scheduled",
+            "enum" : [ "Canceled", "Draft", "Postponed", "Rescheduled", "Scheduled" ]
           },
           "relatedItems" : {
             "type" : "array",
