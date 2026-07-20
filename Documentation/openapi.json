@@ -1,7 +1,7 @@
 {
   "openapi" : "3.0.3",
   "info" : {
-    "description" : "Congress.gov shares its application programming interface (API) with the public to ingest the Congressional data. <a href=\"sign-up/\" target=\"_blank\">Sign up for an API key</a> from api.data.gov that you can use to access web services provided by Congress.gov. To learn more, view our <a href=\"https://github.com/LibraryOfCongress/api.congress.gov/\" target=\"_blank\">GitHub repository</a>.\n",
+    "description" : "Congress.gov shares its application programming interface (API) with the public to ingest the Congressional data. <a href=\"sign-up/\" target=\"_blank\">Sign up for an API key</a> to access web services provided by Congress.gov. To learn more, view our <a href=\"https://github.com/LibraryOfCongress/api.congress.gov/\" target=\"_blank\">GitHub repository</a>.\n",
     "title" : "Congress.gov API",
     "version" : "3"
   },
