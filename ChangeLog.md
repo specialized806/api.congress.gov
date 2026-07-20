@@ -6,11 +6,10 @@ This change log will contain information on updates to the Congress.gov API, the
 [#458](https://github.com/LibraryOfCongress/api.congress.gov/pull/458) merged several fixes to the [OpenAPI spec](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/openapi.yaml), which has been renamed from `swagger.yaml` to `openapi.yaml` (`swagger.json` is also now [`openapi.json`](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/openapi.json). The updated file shows no errors or warnings when run against https://editor.swagger.io/. Changes will be reflected at https://api.congress.gov/ on August 10.
 
 Client generation has been tested against https://hex.pm/packages/oapi_generator and https://github.com/OpenAPITools/openapi-generator. Please open a new issue if problems with other client generators are encountered.
-# UPCOMING July 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/64)
-**Expected Production Release Date: July 20, 2026**
+# Completed July 2026 | [Milestone](https://github.com/LibraryOfCongress/api.congress.gov/milestone/64)
 ## Change #1
 ### Impacted endpoints: `/committee-print`, `/committee-print/{congress}`, `/committee-print/{congress}/{chamber}`, `/committee-print/{congress}/{chamber}/{jacketNumber}`
-The values of `updateDate` fields in responses from the endpoints listed above will be changed to use [RFC 3339](https://www.rfc-editor.org/info/rfc3339/). This change is to:
+The values of `updateDate` fields in responses from the endpoints listed above now use [RFC 3339](https://www.rfc-editor.org/info/rfc3339/). This change is to:
 1. Ensure valid [JSON Schema](https://json-schema.org/understanding-json-schema/reference/type#dates-and-times) for the types specified for these endpoints [here](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/swagger.yaml#L4370) and [here](https://github.com/LibraryOfCongress/api.congress.gov/blob/main/Documentation/swagger.yaml#L4434)
 2. Increase consistency of `date-time` fields across the API specification.
 See also [#456](https://github.com/LibraryOfCongress/api.congress.gov/issues/456).
